@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #grid-wrapper {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-auto-rows: minmax(100px, auto);
+
+            /* grid-row-gap: 10px; 
+      grid-column-gap: 10px;    */
+            grid-gap: 4px;
+        }
+
+        #grid-wrapper>div {
+            background-color: lightgrey;
+        }
+
+        #grid-wrapper>div:nth-child(odd) {
+            background-color: lightgrey;
+        }
+
+        #column-expand {
+            grid-column: 3/6;
+            grid-row: 1;
+        }
+
+        #row-expand {
+            grid-column: 1;
+            grid-row: 1/4;
+        }
+
+        img {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="grid-wrapper">
+        <div id="row-expand">
+            <img src="https://purepng.com/public/uploads/large/purepng.com-akali-sexy-nurse-skinsplashartchampionleague-of-legendsakaliskin-331519922877mgz49.png"
+                alt="Girl-s">
+        </div>
+        <div>
+            <img src="https://purepng.com/public/uploads/large/purepng.com-butterflybutterflyinsectsbloodwormwingspairs-1701528208114mgius.png"
+                alt="Butterfly">
+        </div>
+        <div id="column-expand">
+            <img src="https://purepng.com/public/uploads/large/purepng.com-pandaanimalspandabear-981524673449cwnky.png"
+                alt="Panda">
+        </div>
+        <div>
+            <img src="https://purepng.com/public/uploads/large/purepng.com-white-rabbitrabbitbunnysittingwhite-rabbit-sittingcute-4815211059967fhve.png"
+                alt="Rabbit">
+        </div>
+        <div>
+            <img src="https://purepng.com/public/uploads/large/sexy-little-caprice-in-blue-dress-biy.png" alt="Girl">
+        </div>
+        <div>
+            <img src="https://purepng.com/public/uploads/large/a-girl-has-apple-in-hand-rhf.png" alt="Apple">
+        </div>
+        <div>
+            <img src="https://purepng.com/public/uploads/large/purepng.com-3-blackberrysblackberryblackberrysfruitleaffrontal-4815213067142jks4.png"
+                alt="Blackberry">
+        </div>
+        <div>
+            <img src="https://purepng.com/public/uploads/large/purepng.com-mercedesmercedes-benzmercedesmercedes-luxury-vehiclesbusescoachestrucks-1701527525550mcoay.png"
+                alt="Mercedes">
+        </div>
+        <div>
+            <img src="https://purepng.com/public/uploads/large/woman-using-laptop-pqm.png" alt="Laptop">
+        </div>
+        <div>
+            <img src="https://purepng.com/public/uploads/large/purepng.com-tomatovegetables-tomato-941524727807w2pgp.png"
+                alt="Tomato">
+        </div>
+        <div>
+            <img src="https://purepng.com/public/uploads/large/purepng.com-radicchiovegetablesradicchio-leaf-chicory-leaf-vegetable-red-leaves-bitter-941524703549iye3y.png"
+                alt="Cabbage">
+        </div>
+        <div>
+            <img src="https://purepng.com/public/uploads/large/green-fresh-broccoli-ike.png" alt="Broccoli">
+        </div>
+        <div>
+            <img src="https://pnghunter.com/wp-content/uploads/2018/07/Lana-Rhoades-White-Underwear-1040x1368.png"
+                alt="LanaRhoades">
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validate Form</title>
+    <style>
+        p{
+            color: dodgerblue;
+            border-left: solid;
+            padding-left: 6px;
+            background-color:lightgrey;
+        }
+    </style>
+</head>
+<body>
+    <label for="username">Username: </label>
+    <div>
+        <input type="text" id="username">
+        <button id="valid12">Validate</button>
+    </div>
+    <p id="lengthErr"></p>
+    <p id="emptyErr"></p>
+    <p id="numberErr"></p>
+    <script>
+        document.getElementById("valid12").onclick = () => {
+            isEmpty();
+           // areOnlynumbers();
+            isCorrectLength();
+           
+        }
+         function isEmpty(){
+            let username = document.getElementById("username").value;
+            username = username.trim();
+            
+            if(username === ""){
+                document.getElementById("emptyErr").innerText= "Can't be Empty";
+            } else{
+                document.getElementById ("emptyErr").innerText = "";
+            }
+         }
+        /* function areOnlyNumbers(){
+            let username = document.getElementById("username").value;
+            username = username.trim();
+         
+         if (isNaN(username) && username.length !==0) {
+            document.getElementById("numberErr").innerText = "";
+         } else{
+            document.getElementById("numberErr").innerText ="Only Numbers are Not Allowed";
+         }
+        }*/
+        
+        function isCorrectLength(){
+            let username = documnet.getElementById("username").value.trim();
+            if (username.lenght >= 3 && username.lenght <= 256){
+                document.getElementById("lengthErr").innerText="";
+            }else{
+                document.getElementById("lengthErrr").innerText="Atleast 3 characters required.";
+            }
+        }
+    </script>
+</body>
+</html>

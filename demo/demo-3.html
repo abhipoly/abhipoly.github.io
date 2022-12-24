@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo-3</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(46, 40, 40);
+        }
+
+        .logo img{
+            width: 70px;
+            height: 70px;
+            margin-top: 40px;
+        }
+        .logo h1{
+            text-transform: capitalize;
+            text-align: center; 
+            margin-bottom: 40px;
+            font-size: 70px;
+            font-family: cursive;
+            transform-style: preserve-3d;
+            transform: rotateX(-30deg);
+            animation: animate 4s linear infinite;
+            animation-name: logo;
+            width: 120px;
+            margin-left: 40%;
+
+            }
+@keyframes logo
+{ 
+    0%{transform: rotateX(-30deg)  rotateY(0deg);color: brown; }
+    100%{
+        transform: rotateX(-30deg) rotateY(360deg);color: midnightblue;
+    }
+}
+    .nav img{
+        width: 90px;
+        height: 50px;
+    }
+    .nav{
+        width: 80%;
+        display: flex;
+        flex: 50%;
+        margin-left: 40%;
+        margin-bottom: 40px;
+    }
+    .content button{
+        padding: 15px;
+        background-color: rgb(181, 154, 154);
+    }
+    .content img{
+        width: 80px;
+        height: 80px;
+    }
+    .content{
+        margin-left: 40%;
+    }
+    .content button:hover{
+        background-color: gray;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="logo"><img src="chrome://branding/content/about-logo.png" alt="logo">
+    <h1>firefox</h1></div>
+    <div class="nav">
+        <img src="https://purepng.com/public/uploads/thumbnail/purepng.com-google-logo-2015brandlogobrand-logoiconssymbolslogosgoogle-681522937233qywuj.png" alt="google">
+        <input type="text" name="Search here"  id="Search">
+    </div>
+    <div class="content">
+        <button><img src="https://purepng.com/public/uploads/thumbnail/amazon-logo-ibk.png" alt="amazon"></button>
+        <button><img src="https://purepng.com/public/uploads/thumbnail/facebook-icon-qwj.png" alt="facebook"></button>
+        <button><img src="https://purepng.com/public/uploads/thumbnail/new-instagram-logo-21502363075vrz7nzlu1h.png" alt="instagram"></button>
+        <br>
+        <button><img src="https://purepng.com/public/uploads/thumbnail/whatsapp-icon-esd.png" alt="whattsapp"></button>
+        <button><img src="https://purepng.com/public/uploads/thumbnail/red-heart-with-reflexion-ox2.png" alt="heart"></button>
+        <button><img src="https://purepng.com/public/uploads/thumbnail/purepng.com-mickey-mousemickey-mousemickeymouseanimal-cartooncharacterwalt-disneyub-iwerksstudioslarge-yellow-shoered-shortswhite-glovesnetflix-1701528648941q7van.png" alt="mickey"></button>
+    </div>
+</body>
+</html>

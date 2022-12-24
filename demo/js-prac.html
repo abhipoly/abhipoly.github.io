@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Example</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            display: block;
+            height: 400px;
+            width: 400px;
+            border: rgb(57, 127, 20) 8px dotted;
+            margin: auto;
+            margin-top: 300px;
+            padding-top: 160px;
+            padding-left: 80px;
+        }
+
+        label {
+            color: blue;
+        }
+
+        button {
+            display: block;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2 style="color: dodgerblue; text-align: center;">Contact Form</h2>
+        <br>
+        <br>
+        <br>
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Name">
+        <br>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Email">
+        <br>
+        <br>
+        <br>
+        <br>
+        <label for="phnumber">Mobile Number:</label>
+        <input type="text" id="phnumber" placeholder="Mobile Number">
+        <br>
+        <br>
+        <br>
+        <button onclick="ensure()">Submit✅</button>
+    </div>
+    <script>
+        function ensure() {
+            let status = confirm("Are You Sure?")
+            if (status) {
+                alert("Thank You! We Will Contact You Soon🙋‍♂️")
+            }
+            else {
+                alert("Please Complete Your Details and them submit")
+            }
+        }
+    </script>
+</body>
+
+</html>

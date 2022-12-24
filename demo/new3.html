@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ice Cream Gallery</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        h1{
+            text-align: center;
+            margin: 20px;
+            color: blueviolet;
+            font-family: cursive;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(5 , 1fr);
+            grid-template-rows: minmax(100px , auto);
+            gap: 15px;
+            padding: 8px;
+            
+        }
+        .container img{
+            width: 100%;
+            border: solid 5px grey;
+            border-radius: 30px;
+        }
+        .container img:hover{
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Ice Cream Gallery</h1>
+    <div class="container">
+        <div><img src="https://purepng.com/public/uploads/thumbnail/ice-cream-cones-i93.png" alt="Ice Cream">
+        </div>
+        <div><img src="https://purepng.com/public/uploads/thumbnail/purepng.com-ice-creamice-creamcreamsweetfrozen-1411527618590rmtsy.png" alt="9">
+        </div>
+        <div><img src="https://purepng.com/public/uploads/thumbnail/purepng.com-ice-creamice-creamcreamsweetfrozen-1411527619097vo9wq.png" alt="8">
+        </div>
+        <div><img src="https://purepng.com/public/uploads/thumbnail/purple-and-brown-ice-cream-cones-vm8.png" alt="7">
+        </div>
+        <div><img src="https://purepng.com/public/uploads/thumbnail/purepng.com-ice-creamice-creamcreamfrozensweet-14115276150716kojg.png" alt="6">
+        </div>
+        <div><img src="https://purepng.com/public/uploads/thumbnail/purepng.com-ice-creamice-creamcreamfrozensweet-1411527616779lyf0b.png" alt="5">
+        </div>
+        <div><img src="https://purepng.com/public/uploads/thumbnail/purepng.com-ice-creamice-creamcreamsweetfrozen-1411527616227a2p2a.png" alt="4">
+        </div>
+        <div><img src="https://purepng.com/public/uploads/thumbnail/purepng.com-ice-creamice-creamcreamfrozensweet-1411527615362ljvwt.png" alt="3">
+        </div>
+        <div><img src="https://purepng.com/public/uploads/thumbnail/purepng.com-ice-creamice-creamcreamsweetfrozen-1411527616003ihzou.png" alt="2">
+        </div>
+        <div><img src="https://purepng.com/public/uploads/thumbnail/purepng.com-ice-creamice-creamcreamfrozensweet-14115276160518ovce.png" alt="1">
+        </div>
+    </div>
+</body>
+
+</html>

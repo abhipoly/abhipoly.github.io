@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .nav-1 ul li {
+            list-style: none;
+            text-align: center;
+            background: green;
+        }
+
+        .nav-1 ul li a {
+            text-decoration: none;
+            color: aliceblue;
+            font-size: 40px;
+            text-transform: capitalize;
+        }
+
+        .nav-1 ul :hover {
+            background-color: rgb(73, 214, 73);
+        }
+
+        .nav-2 ul li {
+            list-style: none;
+
+        }
+
+        .nav-2 ul li a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            background-color: rgb(177, 177, 30);
+            color: aliceblue;
+            font-size: 30px;
+            text-align: center;
+            height: 120px;
+        }
+
+        .CONTAINER {
+            display: grid;
+            grid-template-areas: 'nav-1 nav-1 nav-1 nav-1 nav-1 nav-1 '
+                'nav-2 nav-2 content content content content'
+                'nav-2 nav-2 text text text text';
+            gap: 10px;
+            background-color: pink;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <DIV class="CONTAINER">
+        <div class="nav-1">
+            <ul>
+                <li><a href="#">hello</a></li>
+                <li><a href="#">how</a></li>
+                <li><a href="#">are</a></li>
+                <li><a href="#">you</a></li>
+                <li><a href="#">bitch</a></li>
+            </ul>
+        </div>
+        <div class="nav-2">
+            <ul>
+                <li><a href="#">hope</a></li>
+                <li><a href="#">you</a></li>
+                <li><a href="#">are</a></li>
+                <li><a href="#">doing</a></li>
+                <li><a href="#">well</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="img"><img
+                    src="https://purepng.com/public/uploads/thumbnail/purepng.com-pizzafood-pizza-9415246443273fsfa.png"
+                    alt=""></div>
+            <div class="img"><img
+                    src="https://purepng.com/public/uploads/thumbnail/purepng.com-cheese-pizzafood-pizza-cheese-941524635158swrtm.png"
+                    alt=""></div>
+        </div>
+        <div class="text">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam, obcaecati numquam. Perferendis eveniet
+                obcaecati necessitatibus repellendus debitis cum voluptatem deserunt. Iusto, velit facere? Fugit autem
+                molestias quae eaque voluptatum earum!
+                <br>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam quae veritatis culpa nisi vitae
+                illum fuga a nostrum, repellat fugiat harum corrupti explicabo modi aut autem esse voluptate deserunt
+                veniam.
+
+            </p>
+        </div>
+    </DIV>
+</body>
+
+</html>

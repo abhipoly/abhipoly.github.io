@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            display:block;
+            border: solid 3px lightblue;
+            box-shadow: 10px 8px 9px 10px lightskyblue;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <label for="bnkname"> Bank Name: </label>
+        <br>
+        <input type="text" id="bnkname" required>
+        <br>
+        <label for="">Mobile No:</label>
+        <br>
+        <input type="text" id="mob" required>
+        <br>
+        <label for="amnt">Amount:</label>
+        <br>
+        <input type="text"  id="amnt" required>
+        <br>
+        <label for="upin">Upin:</label>
+        <br>
+        <input type="password" id="upin" required>
+        <br>
+        <button id="pay">Pay</button>
+
+    </div>
+</body>
+</html>

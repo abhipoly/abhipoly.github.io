@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Hey!</h1>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa quae at obcaecati libero nihil voluptate laborum impedit possimus iste, id pariatur optio aperiam deleniti velit quibusdam expedita delectus commodi maxime?</p>
+
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque aliquam, sit eos recusandae voluptatum quae magni maiores impedit optio rem delectus esse et, velit atque ipsam, inventore laboriosam cupiditate natus.</p>
+
+<button id="btn">Click Me!</button>
+
+<p id="demo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum modi quas natus amet explicabo quisquam sint non illum dolores nam. Unde optio dolorum aut perspiciatis ea itaque praesentium possimus impedit.</p>
+
+<script>
+let hello = "";
+
+hello = () => {
+  document.getElementById("demo").innerHTML += this;
+}
+
+//The window object calls the function:
+window.addEventListener("load", hello);
+
+//A button object calls the function:
+document.getElementById("btn").addEventListener("click", hello);
+</script>
+
+</body>
+</html>

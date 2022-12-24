@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo-5</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        .nav-1 ul{
+            list-style: none;
+            
+        }
+        .nav-1 ul li {
+         float: left;
+         width: 25%;
+         background: palevioletred;
+         height: 30px;
+         text-align: center;
+        }
+        .nav-1 ul li a{
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        .nav-1 ul :hover{
+            background: rgb(218, 71, 120);
+            
+        }
+        .nav-2 {
+            animation-name: nav-2;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes nav-2{
+            0%{margin-left: 10%;}
+            10%{margin-left: 20%;}
+            20%{margin-left: 30%;}
+            30%{margin-left: 40%;}
+            40%{margin-left: 50%;}
+            50%{margin-left: 60%;}
+            60%{margin-left: 70%;}
+            70%{margin-left: 80%;}
+            80%{margin-left: 90%;}
+            100%{margin-left: 0%;}
+        }
+        .content-1{
+            display: block;
+            float: left;
+            width: 10%;
+            height: 150px;
+        }
+      
+        .content-1 img{
+            height: 280px;
+            margin-top: 50px;
+            margin-left: 40px;
+         }
+        .content::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        .donald{
+            margin-left: 10px;
+            animation-name: anime;
+            animation-duration: 6s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes anime {
+            0%{margin-left: 150px;}
+            10%{margin-left: 110px;}
+            20%{margin-left: 100px;}
+            30%{margin-left: 80px;}
+            40%{margin-left: 60px;}
+            50%{margin-left: 50px;}
+            60%{margin-left: 40px;}
+            80%{margin-left: 30px;}
+            100%{margin-left: 1px;}
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="nav-1">
+        <ul>
+            <li><a href="#">Hello</a></li>
+            <li><a href="#">Hola</a></li>
+            <li><a href="#">Bonjour</a></li>
+            <li><a href="#">Namaste</a></li>
+
+        </ul>
+    </div>
+    <div class="nav-2">
+        <p>come back soon!!</p>
+    </div>
+    <div class="content">
+    <div class="content-1">
+        <img src="https://purepng.com/public/uploads/thumbnail/purepng.com-daisy-duckdonald-duckdonaldduckcartooncharacter1934walt-disneywhite-duck-170152854659358vbr.png" alt="">
+    </div>
+    <div class="content-1">
+        <div class="donald">
+        <img src="https://purepng.com/public/uploads/thumbnail/purepng.com-donald-duck-holding-heartdonald-duckdonaldduckcartooncharacter1934walt-disneywhite-duck-1701528546797pfp3i.png" alt="">
+    </div>
+    </div>
+</div>
+<p></p>
+</body>
+</html>

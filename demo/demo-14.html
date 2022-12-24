@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding :0;
+        }
+        .container{
+            background-color: pink;
+            height: 700px;
+        }
+        h1{
+            background-color: rgb(158, 241, 158);
+            height: 80px;
+            align-items: center;
+        }
+        .nav-bar{
+            background-color: rgb(149, 149, 227);
+            height: 70px;
+        }
+        .nav-bar li{
+            display: inline-block;
+            width: 24%;
+           align-items: center;
+        }
+        .nav-bar li a {
+            text-decoration: none;
+            align-items: center;
+        }
+        .content{
+            background-color: rgb(244, 244, 76);
+            height: calc(700px - 80px - 70px - 70px);
+            width: 80%;
+            float: right;
+        }
+        .side-bar{
+            background-color: rgb(247, 167, 19);
+            height: (700px - 80px - 70px - 70px);
+            width: 20%;
+            float: left;
+        }
+        .footer{
+            background-color: rgb(53, 108, 51);
+            height: 70px;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>hello</h1>
+        <ul class="nav-bar">
+            <li><a href="#">home</a></li>
+            <li><a href="#">home</a></li>
+             <li><a href="#">home</a></li>
+             <li><a href="#">home</a></li>
+        </ul>
+        <div class="content">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta quo accusamus repellat sunt numquam, incidunt illum repellendus dolorum enim maiores totam at accusantium officiis tempore exercitationem sed, unde blanditiis dolore.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia incidunt, dolor laborum ea ratione nihil voluptatum reiciendis quae autem, asperiores, voluptatibus esse. Quisquam provident veritatis ipsam repudiandae soluta atque perspiciatis?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe recusandae totam dolores dolore adipisci nobis eius, obcaecati consequatur! Expedita sit ab reiciendis deleniti est facilis quibusdam a ut exercitationem earum?
+            </p>
+        </div>
+      <ul class="side-bar">
+        <li><a href="#">about</a></li>
+        <li><a href="#">about</a></li>
+        <li><a href="#">about</a></li>
+        <li><a href="#">about</a></li>
+      </ul>
+        <div class="footer">
+            <p>contact
+                <br>
+                bye
+            </p>
+        </div>
+    </div>
+</body>
+</html>
